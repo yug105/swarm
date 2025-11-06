@@ -27,7 +27,6 @@ def generate_launch_description():
                 ("fmu/out/vehicle_odometry", f"/{d['ns']}/fmu/out/vehicle_odometry"),
                 ("fmu/out/vehicle_status", f"/{d['ns']}/fmu/out/vehicle_status"),
                 ("fmu/in/vehicle_command", f"/{d['ns']}/fmu/in/vehicle_command"),
-                ("fmu/in/offboard_control_mode", f"/{d['ns']}/fmu/in/offboard_control_mode"),
                 ("fmu/in/trajectory_setpoint", f"/{d['ns']}/fmu/in/trajectory_setpoint"),
             ]
         ))
