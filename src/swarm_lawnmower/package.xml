@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>swarm_lawnmower</name>
+  <version>0.0.1</version>
+  <description>Swarm lawnmower control node using PX4 NodeWithMode</description>
+
+  <maintainer email="your@email.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <!-- Core build system -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS 2 / PX4 runtime dependencies -->
+  <depend>rclcpp</depend>
+  <depend>px4_ros2_cpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+
+  <!-- Eigen dependencies -->
+  <build_depend>eigen3_cmake_module</build_depend>
+  <exec_depend>eigen3_cmake_module</exec_depend>
+  <build_depend>Eigen3</build_depend>
+  <exec_depend>Eigen3</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

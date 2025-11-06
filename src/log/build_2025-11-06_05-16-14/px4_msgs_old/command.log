@@ -1,0 +1,6 @@
+Invoking command in '/home/yug/ros2_ws/src/build/px4_msgs_old': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yug/ros2_ws/src/px4_msgs_old -DCMAKE_INSTALL_PREFIX=/home/yug/ros2_ws/src/install/px4_msgs_old
+Invoked command in '/home/yug/ros2_ws/src/build/px4_msgs_old' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yug/ros2_ws/src/px4_msgs_old -DCMAKE_INSTALL_PREFIX=/home/yug/ros2_ws/src/install/px4_msgs_old
+Invoking command in '/home/yug/ros2_ws/src/build/px4_msgs_old': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yug/ros2_ws/src/build/px4_msgs_old -- -j16 -l16
+Invoked command in '/home/yug/ros2_ws/src/build/px4_msgs_old' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yug/ros2_ws/src/build/px4_msgs_old -- -j16 -l16
+Invoking command in '/home/yug/ros2_ws/src/build/px4_msgs_old': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yug/ros2_ws/src/build/px4_msgs_old
+Invoked command in '/home/yug/ros2_ws/src/build/px4_msgs_old' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yug/ros2_ws/src/build/px4_msgs_old

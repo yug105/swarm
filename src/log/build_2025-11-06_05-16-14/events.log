@@ -1,0 +1,1263 @@
+[0.000000] (-) TimerEvent: {}
+[0.000183] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000217] (px4_msgs_old) JobQueued: {'identifier': 'px4_msgs_old', 'dependencies': OrderedDict()}
+[0.000238] (px4_ros2_cpp) JobQueued: {'identifier': 'px4_ros2_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs')])}
+[0.000261] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs')])}
+[0.000282] (swarm_offboard) JobQueued: {'identifier': 'swarm_offboard', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs')])}
+[0.000301] (translation_node) JobQueued: {'identifier': 'translation_node', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_msgs_old', '/home/yug/ros2_ws/src/install/px4_msgs_old')])}
+[0.000321] (draw_flight_mode) JobQueued: {'identifier': 'draw_flight_mode', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000340] (example_executor_with_multiple_modes_cpp) JobQueued: {'identifier': 'example_executor_with_multiple_modes_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000360] (example_global_navigation_cpp) JobQueued: {'identifier': 'example_global_navigation_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000378] (example_local_navigation_cpp) JobQueued: {'identifier': 'example_local_navigation_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000396] (example_mode_fw_attitude_cpp) JobQueued: {'identifier': 'example_mode_fw_attitude_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000413] (example_mode_goto_cpp) JobQueued: {'identifier': 'example_mode_goto_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000431] (example_mode_goto_global_cpp) JobQueued: {'identifier': 'example_mode_goto_global_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000449] (example_mode_manual_cpp) JobQueued: {'identifier': 'example_mode_manual_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000466] (example_mode_rtl_replacement_cpp) JobQueued: {'identifier': 'example_mode_rtl_replacement_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000483] (example_mode_with_executor_cpp) JobQueued: {'identifier': 'example_mode_with_executor_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000500] (swarm) JobQueued: {'identifier': 'swarm', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000517] (swarm_lawnmower) JobQueued: {'identifier': 'swarm_lawnmower', 'dependencies': OrderedDict([('px4_msgs', '/home/yug/ros2_ws/src/install/px4_msgs'), ('px4_ros2_cpp', '/home/yug/ros2_ws/src/install/px4_ros2_cpp')])}
+[0.000534] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.005974] (px4_msgs_old) JobStarted: {'identifier': 'px4_msgs_old'}
+[0.009824] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.010344] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/yug/ros2_ws/src/px4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/yug/ros2_ws/src/install/px4_msgs'], 'cwd': '/home/yug/ros2_ws/src/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'yug'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/yug/ros2_ws/install/translation_node/lib:/home/yug/ros2_ws/install/px4_ros_com/lib:/home/yug/ros2_ws/install/px4_ros2_cpp/lib:/home/yug/ros2_ws/install/px4_msgs_old/lib:/home/yug/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yug'), ('OLDPWD', '/home/yug/ros2_ws/src/swarm_offboard'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yug/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yug'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yug'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/yug/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yug-Legion-5-Pro-16ACH6H:@/tmp/.ICE-unix/1275,unix/yug-Legion-5-Pro-16ACH6H:/tmp/.ICE-unix/1275'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/00b30447_fe09_45af_97d8_cde6207043d0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SMMKF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:67a83d29-fe0c-4ace-84fc-596c1ce4ba3a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yug/ros2_ws/src/build/px4_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yug/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs_old/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.013229] (px4_msgs_old) JobProgress: {'identifier': 'px4_msgs_old', 'progress': 'cmake'}
+[0.014053] (px4_msgs_old) Command: {'cmd': ['/usr/bin/cmake', '/home/yug/ros2_ws/src/px4_msgs_old', '-DCMAKE_INSTALL_PREFIX=/home/yug/ros2_ws/src/install/px4_msgs_old'], 'cwd': '/home/yug/ros2_ws/src/build/px4_msgs_old', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'yug'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/yug/ros2_ws/install/translation_node/lib:/home/yug/ros2_ws/install/px4_ros_com/lib:/home/yug/ros2_ws/install/px4_ros2_cpp/lib:/home/yug/ros2_ws/install/px4_msgs_old/lib:/home/yug/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yug'), ('OLDPWD', '/home/yug/ros2_ws/src/swarm_offboard'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yug/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yug'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yug'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/yug/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yug-Legion-5-Pro-16ACH6H:@/tmp/.ICE-unix/1275,unix/yug-Legion-5-Pro-16ACH6H:/tmp/.ICE-unix/1275'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/00b30447_fe09_45af_97d8_cde6207043d0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SMMKF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:67a83d29-fe0c-4ace-84fc-596c1ce4ba3a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yug/ros2_ws/src/build/px4_msgs_old'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yug/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs_old/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.059611] (px4_msgs_old) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.059880] (px4_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099313] (-) TimerEvent: {}
+[0.106203] (px4_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.107369] (px4_msgs_old) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.113265] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.113895] (px4_msgs_old) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.174775] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.174995] (px4_msgs_old) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.180097] (px4_msgs_old) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.180250] (px4_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.180350] (px4_msgs_old) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.180437] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.180632] (px4_msgs_old) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.180798] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.182875] (px4_msgs_old) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.183057] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199432] (-) TimerEvent: {}
+[0.253555] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.253725] (px4_msgs_old) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.258961] (px4_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.259087] (px4_msgs_old) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.259188] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.259272] (px4_msgs_old) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.259548] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.259630] (px4_msgs_old) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.263346] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.263486] (px4_msgs_old) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299533] (-) TimerEvent: {}
+[0.393568] (px4_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.394024] (px4_msgs_old) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.399626] (-) TimerEvent: {}
+[0.498046] (px4_msgs_old) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.498200] (px4_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.499707] (-) TimerEvent: {}
+[0.538505] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.538748] (px4_msgs_old) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.545573] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.545742] (px4_msgs_old) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.555301] (px4_msgs_old) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.555446] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.568287] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.568422] (px4_msgs_old) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.585414] (px4_msgs_old) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.585579] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.599793] (-) TimerEvent: {}
+[0.608391] (px4_msgs_old) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.608544] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.699917] (-) TimerEvent: {}
+[0.800236] (-) TimerEvent: {}
+[0.832850] (px4_msgs_old) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[0.836460] (px4_msgs_old) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[0.840080] (px4_msgs_old) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[0.844250] (px4_msgs_old) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.900341] (-) TimerEvent: {}
+[1.000588] (-) TimerEvent: {}
+[1.100853] (-) TimerEvent: {}
+[1.122526] (px4_msgs_old) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.200955] (-) TimerEvent: {}
+[1.237163] (px4_msgs_old) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.261956] (px4_msgs_old) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.265393] (px4_msgs_old) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.292045] (px4_msgs_old) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.292441] (px4_msgs_old) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.292550] (px4_msgs_old) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.292612] (px4_msgs_old) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.301046] (-) TimerEvent: {}
+[1.313896] (px4_msgs_old) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.353108] (px4_msgs_old) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.14 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[1.356930] (px4_msgs_old) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.14 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[1.367196] (px4_msgs_old) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.399287] (px4_msgs_old) StdoutLine: {'line': b'-- Generating done\n'}
+[1.401133] (-) TimerEvent: {}
+[1.409634] (px4_msgs_old) StdoutLine: {'line': b'-- Build files have been written to: /home/yug/ros2_ws/src/build/px4_msgs_old\n'}
+[1.420399] (px4_msgs_old) CommandEnded: {'returncode': 0}
+[1.421060] (px4_msgs_old) JobProgress: {'identifier': 'px4_msgs_old', 'progress': 'build'}
+[1.422163] (px4_msgs_old) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yug/ros2_ws/src/build/px4_msgs_old', '--', '-j16', '-l16'], 'cwd': '/home/yug/ros2_ws/src/build/px4_msgs_old', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'yug'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/yug/ros2_ws/install/translation_node/lib:/home/yug/ros2_ws/install/px4_ros_com/lib:/home/yug/ros2_ws/install/px4_ros2_cpp/lib:/home/yug/ros2_ws/install/px4_msgs_old/lib:/home/yug/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yug'), ('OLDPWD', '/home/yug/ros2_ws/src/swarm_offboard'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yug/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yug'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yug'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/yug/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yug-Legion-5-Pro-16ACH6H:@/tmp/.ICE-unix/1275,unix/yug-Legion-5-Pro-16ACH6H:/tmp/.ICE-unix/1275'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/00b30447_fe09_45af_97d8_cde6207043d0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SMMKF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:67a83d29-fe0c-4ace-84fc-596c1ce4ba3a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yug/ros2_ws/src/build/px4_msgs_old'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yug/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs_old/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[1.463304] (px4_msgs_old) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.473779] (px4_msgs_old) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.482877] (px4_msgs_old) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_px4_msgs_old\n'}
+[1.501257] (-) TimerEvent: {}
+[1.601510] (-) TimerEvent: {}
+[1.700497] (px4_msgs_old) StdoutLine: {'line': b'running egg_info\n'}
+[1.701175] (px4_msgs_old) StdoutLine: {'line': b'creating px4_msgs_old.egg-info\n'}
+[1.701358] (px4_msgs_old) StdoutLine: {'line': b'writing px4_msgs_old.egg-info/PKG-INFO\n'}
+[1.701522] (px4_msgs_old) StdoutLine: {'line': b'writing dependency_links to px4_msgs_old.egg-info/dependency_links.txt\n'}
+[1.701596] (-) TimerEvent: {}
+[1.701779] (px4_msgs_old) StdoutLine: {'line': b'writing top-level names to px4_msgs_old.egg-info/top_level.txt\n'}
+[1.701950] (px4_msgs_old) StdoutLine: {'line': b"writing manifest file 'px4_msgs_old.egg-info/SOURCES.txt'\n"}
+[1.704043] (px4_msgs_old) StdoutLine: {'line': b"reading manifest file 'px4_msgs_old.egg-info/SOURCES.txt'\n"}
+[1.704712] (px4_msgs_old) StdoutLine: {'line': b"writing manifest file 'px4_msgs_old.egg-info/SOURCES.txt'\n"}
+[1.740225] (px4_msgs_old) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_px4_msgs_old_egg\n'}
+[1.801721] (-) TimerEvent: {}
+[1.902071] (-) TimerEvent: {}
+[2.002505] (-) TimerEvent: {}
+[2.060485] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.102611] (-) TimerEvent: {}
+[2.202938] (-) TimerEvent: {}
+[2.303281] (-) TimerEvent: {}
+[2.403759] (-) TimerEvent: {}
+[2.438634] (px4_msgs_old) StdoutLine: {'line': b'[  6%] Built target px4_msgs_old__cpp\n'}
+[2.451012] (px4_msgs_old) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs_old/msg/detail/vehicle_status_v0__functions.c.o\x1b[0m\n'}
+[2.451323] (px4_msgs_old) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.451400] (px4_msgs_old) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.451467] (px4_msgs_old) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.500000] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.503865] (-) TimerEvent: {}
+[2.505599] (px4_msgs_old) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libpx4_msgs_old__rosidl_generator_c.so\x1b[0m\n'}
+[2.543768] (px4_msgs_old) StdoutLine: {'line': b'[ 22%] Built target px4_msgs_old__rosidl_generator_c\n'}
+[2.556244] (px4_msgs_old) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.556554] (px4_msgs_old) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.559636] (px4_msgs_old) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.603994] (-) TimerEvent: {}
+[2.690343] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.704093] (-) TimerEvent: {}
+[2.714833] (px4_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.718675] (px4_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.745462] (px4_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.745692] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.745787] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.745952] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.767882] (px4_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.804204] (-) TimerEvent: {}
+[2.848486] (px4_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.904312] (-) TimerEvent: {}
+[3.004582] (-) TimerEvent: {}
+[3.104884] (-) TimerEvent: {}
+[3.199419] (px4_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.204978] (-) TimerEvent: {}
+[3.236375] (px4_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/yug/ros2_ws/src/build/px4_msgs\n'}
+[3.260113] (px4_msgs) CommandEnded: {'returncode': 0}
+[3.260915] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[3.261206] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yug/ros2_ws/src/build/px4_msgs', '--', '-j16', '-l16'], 'cwd': '/home/yug/ros2_ws/src/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'yug'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/yug/ros2_ws/install/translation_node/lib:/home/yug/ros2_ws/install/px4_ros_com/lib:/home/yug/ros2_ws/install/px4_ros2_cpp/lib:/home/yug/ros2_ws/install/px4_msgs_old/lib:/home/yug/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yug'), ('OLDPWD', '/home/yug/ros2_ws/src/swarm_offboard'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yug/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yug'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yug'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/yug/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yug-Legion-5-Pro-16ACH6H:@/tmp/.ICE-unix/1275,unix/yug-Legion-5-Pro-16ACH6H:/tmp/.ICE-unix/1275'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/00b30447_fe09_45af_97d8_cde6207043d0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SMMKF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:67a83d29-fe0c-4ace-84fc-596c1ce4ba3a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yug/ros2_ws/src/build/px4_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yug/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs_old/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[3.305090] (-) TimerEvent: {}
+[3.405419] (-) TimerEvent: {}
+[3.414771] (px4_msgs_old) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs_old/msg/vehicle_status_v0__type_support.cpp.o\x1b[0m\n'}
+[3.448165] (px4_msgs_old) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.cpp.o\x1b[0m\n'}
+[3.473966] (px4_msgs_old) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs_old/msg/detail/dds_fastrtps/vehicle_status_v0__type_support.cpp.o\x1b[0m\n'}
+[3.505557] (-) TimerEvent: {}
+[3.505869] (px4_msgs_old) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs_old/msg/vehicle_status_v0__type_support.cpp.o\x1b[0m\n'}
+[3.514221] (px4_msgs_old) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.c.o\x1b[0m\n'}
+[3.534539] (px4_msgs_old) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.549668] (px4_msgs_old) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking C shared library libpx4_msgs_old__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.554325] (px4_msgs_old) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs_old/msg/detail/vehicle_status_v0__type_support_c.cpp.o\x1b[0m\n'}
+[3.575891] (px4_msgs_old) StdoutLine: {'line': b'[ 58%] Built target px4_msgs_old__rosidl_typesupport_c\n'}
+[3.582081] (px4_msgs_old) StdoutLine: {'line': b'[ 58%] Built target px4_msgs_old__rosidl_typesupport_introspection_c\n'}
+[3.605695] (-) TimerEvent: {}
+[3.648500] (px4_msgs_old) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.689375] (px4_msgs_old) StdoutLine: {'line': b'[ 61%] Built target px4_msgs_old__rosidl_typesupport_cpp\n'}
+[3.705802] (-) TimerEvent: {}
+[3.767991] (px4_msgs_old) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.805941] (-) TimerEvent: {}
+[3.808285] (px4_msgs_old) StdoutLine: {'line': b'[ 64%] Built target px4_msgs_old__rosidl_typesupport_introspection_cpp\n'}
+[3.809769] (px4_msgs_old) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.838828] (px4_msgs_old) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.871678] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.882185] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_px4_msgs\n'}
+[3.891309] (px4_msgs_old) StdoutLine: {'line': b'[ 70%] Built target px4_msgs_old__rosidl_typesupport_fastrtps_cpp\n'}
+[3.897337] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.906044] (-) TimerEvent: {}
+[3.918101] (px4_msgs_old) StdoutLine: {'line': b'[ 70%] Built target px4_msgs_old__rosidl_typesupport_fastrtps_c\n'}
+[3.939885] (px4_msgs_old) StdoutLine: {'line': b'[ 70%] Built target px4_msgs_old\n'}
+[3.960712] (px4_msgs_old) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.006145] (-) TimerEvent: {}
+[4.086489] (px4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.087002] (px4_msgs) StdoutLine: {'line': b'creating px4_msgs.egg-info\n'}
+[4.087237] (px4_msgs) StdoutLine: {'line': b'writing px4_msgs.egg-info/PKG-INFO\n'}
+[4.087438] (px4_msgs) StdoutLine: {'line': b'writing dependency_links to px4_msgs.egg-info/dependency_links.txt\n'}
+[4.087734] (px4_msgs) StdoutLine: {'line': b'writing top-level names to px4_msgs.egg-info/top_level.txt\n'}
+[4.087949] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[4.090106] (px4_msgs) StdoutLine: {'line': b"reading manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[4.090504] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[4.106323] (-) TimerEvent: {}
+[4.116876] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_px4_msgs_egg\n'}
+[4.206429] (-) TimerEvent: {}
+[4.306717] (-) TimerEvent: {}
+[4.406957] (-) TimerEvent: {}
+[4.507207] (-) TimerEvent: {}
+[4.607465] (-) TimerEvent: {}
+[4.707715] (-) TimerEvent: {}
+[4.807974] (-) TimerEvent: {}
+[4.908233] (-) TimerEvent: {}
+[5.008544] (-) TimerEvent: {}
+[5.108843] (-) TimerEvent: {}
+[5.209132] (-) TimerEvent: {}
+[5.309398] (-) TimerEvent: {}
+[5.409701] (-) TimerEvent: {}
+[5.479136] (px4_msgs_old) StdoutLine: {'line': b'[ 74%] Built target px4_msgs_old__py\n'}
+[5.499330] (px4_msgs_old) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs_old/msg/_vehicle_status_v0_s.c.o\x1b[0m\n'}
+[5.509792] (-) TimerEvent: {}
+[5.610038] (-) TimerEvent: {}
+[5.613185] (px4_msgs_old) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/px4_msgs_old/libpx4_msgs_old__rosidl_generator_py.so\x1b[0m\n'}
+[5.651210] (px4_msgs_old) StdoutLine: {'line': b'[ 80%] Built target px4_msgs_old__rosidl_generator_py\n'}
+[5.671036] (px4_msgs_old) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.671261] (px4_msgs_old) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.671374] (px4_msgs_old) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.710149] (-) TimerEvent: {}
+[5.752562] (px4_msgs_old) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.752784] (px4_msgs_old) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.752889] (px4_msgs_old) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.786537] (px4_msgs_old) StdoutLine: {'line': b'[100%] Built target px4_msgs_old__rosidl_typesupport_introspection_c__pyext\n'}
+[5.786802] (px4_msgs_old) StdoutLine: {'line': b'[100%] Built target px4_msgs_old__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.786923] (px4_msgs_old) StdoutLine: {'line': b'[100%] Built target px4_msgs_old__rosidl_typesupport_c__pyext\n'}
+[5.798221] (px4_msgs_old) CommandEnded: {'returncode': 0}
+[5.798898] (px4_msgs_old) JobProgress: {'identifier': 'px4_msgs_old', 'progress': 'install'}
+[5.808249] (px4_msgs_old) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yug/ros2_ws/src/build/px4_msgs_old'], 'cwd': '/home/yug/ros2_ws/src/build/px4_msgs_old', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'yug'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/yug/ros2_ws/install/translation_node/lib:/home/yug/ros2_ws/install/px4_ros_com/lib:/home/yug/ros2_ws/install/px4_ros2_cpp/lib:/home/yug/ros2_ws/install/px4_msgs_old/lib:/home/yug/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yug'), ('OLDPWD', '/home/yug/ros2_ws/src/swarm_offboard'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yug/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yug'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yug'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/yug/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yug-Legion-5-Pro-16ACH6H:@/tmp/.ICE-unix/1275,unix/yug-Legion-5-Pro-16ACH6H:/tmp/.ICE-unix/1275'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/00b30447_fe09_45af_97d8_cde6207043d0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SMMKF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:67a83d29-fe0c-4ace-84fc-596c1ce4ba3a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yug/ros2_ws/src/build/px4_msgs_old'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yug/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs_old/local/lib/python3.10/dist-packages:/home/yug/ros2_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yug/ros2_ws/install/translation_node:/home/yug/ros2_ws/install/swarm_offboard:/home/yug/ros2_ws/install/swarm_lawnmower:/home/yug/ros2_ws/install/swarm:/home/yug/ros2_ws/install/px4_ros_com:/home/yug/ros2_ws/install/example_mode_with_executor_cpp:/home/yug/ros2_ws/install/example_mode_rtl_replacement_cpp:/home/yug/ros2_ws/install/example_mode_manual_cpp:/home/yug/ros2_ws/install/example_mode_goto_global_cpp:/home/yug/ros2_ws/install/example_mode_goto_cpp:/home/yug/ros2_ws/install/example_mode_fw_attitude_cpp:/home/yug/ros2_ws/install/example_local_navigation_cpp:/home/yug/ros2_ws/install/example_global_navigation_cpp:/home/yug/ros2_ws/install/example_executor_with_multiple_modes_cpp:/home/yug/ros2_ws/install/px4_ros2_cpp:/home/yug/ros2_ws/install/px4_msgs_old:/home/yug/ros2_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[5.810222] (-) TimerEvent: {}
+[5.816196] (px4_msgs_old) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.816464] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/ament_index/resource_index/rosidl_interfaces/px4_msgs_old\n'}
+[5.816688] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old\n'}
+[5.816857] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg\n'}
+[5.816997] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/vehicle_status_v0.h\n'}
+[5.817133] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail\n'}
+[5.817248] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__struct.h\n'}
+[5.817413] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__functions.h\n'}
+[5.817571] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__functions.c\n'}
+[5.817755] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.h\n'}
+[5.817932] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.818196] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/library_path.sh\n'}
+[5.818401] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/library_path.dsv\n'}
+[5.818717] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_generator_c.so\n'}
+[5.819137] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_generator_c.so" to ""\n'}
+[5.819239] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old\n'}
+[5.819292] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg\n'}
+[5.819341] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.819406] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail\n'}
+[5.819483] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__rosidl_typesupport_fastrtps_c.h\n'}
+[5.819558] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_fastrtps_c.so\n'}
+[5.820138] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.820230] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old\n'}
+[5.820341] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg\n'}
+[5.820394] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.820474] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/vehicle_status_v0.hpp\n'}
+[5.820554] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail\n'}
+[5.820617] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__builder.hpp\n'}
+[5.820759] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.hpp\n'}
+[5.820880] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__struct.hpp\n'}
+[5.821045] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__traits.hpp\n'}
+[5.821216] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old\n'}
+[5.821285] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg\n'}
+[5.821374] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.821473] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail\n'}
+[5.821526] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.821610] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/dds_fastrtps\n'}
+[5.821755] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.822162] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.822334] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old\n'}
+[5.822412] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg\n'}
+[5.822505] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.822567] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail\n'}
+[5.822662] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__rosidl_typesupport_introspection_c.h\n'}
+[5.822737] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.c\n'}
+[5.822826] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_introspection_c.so\n'}
+[5.823186] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.823270] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_c.so\n'}
+[5.823568] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_c.so" to ""\n'}
+[5.823634] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old\n'}
+[5.823756] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg\n'}
+[5.823816] (px4_msgs_old) StdoutLine: {'line': b'-- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail\n'}
+[5.823861] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.823951] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.cpp\n'}
+[5.824072] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_introspection_cpp.so\n'}
+[5.824427] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.824498] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_cpp.so\n'}
+[5.824830] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_cpp.so" to ""\n'}
+[5.824919] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/pythonpath.sh\n'}
+[5.825038] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/pythonpath.dsv\n'}
+[5.825178] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info\n'}
+[5.825355] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info/top_level.txt\n'}
+[5.825484] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info/PKG-INFO\n'}
+[5.825604] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[5.825736] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[5.825896] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old\n'}
+[5.826021] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/libpx4_msgs_old__rosidl_generator_py.so\n'}
+[5.826158] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.826284] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/__init__.py\n'}
+[5.826395] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_c.c\n'}
+[5.826519] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.826655] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.826794] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg\n'}
+[5.826882] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/__init__.py\n'}
+[5.827007] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/_vehicle_status_v0.py\n'}
+[5.827196] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/_vehicle_status_v0_s.c\n'}
+[5.827343] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.827482] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.861085] (px4_msgs_old) StdoutLine: {'line': b"Listing '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old'...\n"}
+[5.861267] (px4_msgs_old) StdoutLine: {'line': b"Compiling '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/__init__.py'...\n"}
+[5.861336] (px4_msgs_old) StdoutLine: {'line': b"Listing '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg'...\n"}
+[5.861396] (px4_msgs_old) StdoutLine: {'line': b"Compiling '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/__init__.py'...\n"}
+[5.861462] (px4_msgs_old) StdoutLine: {'line': b"Compiling '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/_vehicle_status_v0.py'...\n"}
+[5.865148] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.865493] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.865709] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.866070] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.866248] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.866595] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.866797] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_generator_py.so\n'}
+[5.867078] (px4_msgs_old) StdoutLine: {'line': b'-- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_generator_py.so" to ""\n'}
+[5.867173] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/msg/VehicleStatusV0.idl\n'}
+[5.867314] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/msg/VehicleStatusV0.msg\n'}
+[5.867494] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/ament_index/resource_index/package_run_dependencies/px4_msgs_old\n'}
+[5.867679] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/ament_index/resource_index/parent_prefix_path/px4_msgs_old\n'}
+[5.867827] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/ament_prefix_path.sh\n'}
+[5.867951] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/ament_prefix_path.dsv\n'}
+[5.868081] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/path.sh\n'}
+[5.868213] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/path.dsv\n'}
+[5.868338] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/local_setup.bash\n'}
+[5.868462] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/local_setup.sh\n'}
+[5.868597] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/local_setup.zsh\n'}
+[5.868734] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/local_setup.dsv\n'}
+[5.868865] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/package.dsv\n'}
+[5.869030] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/ament_index/resource_index/packages/px4_msgs_old\n'}
+[5.869204] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_cExport.cmake\n'}
+[5.869338] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.869488] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.869625] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.869776] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_cppExport.cmake\n'}
+[5.869919] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.870053] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.870196] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.870379] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.870504] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_cExport.cmake\n'}
+[5.870646] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.870852] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.870981] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.871125] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_cppExport.cmake\n'}
+[5.871261] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.871397] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_pyExport.cmake\n'}
+[5.871533] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.871670] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/rosidl_cmake-extras.cmake\n'}
+[5.871805] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.871936] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.872083] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.872217] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.872341] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.872482] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.872619] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_oldConfig.cmake\n'}
+[5.872740] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_oldConfig-version.cmake\n'}
+[5.872867] (px4_msgs_old) StdoutLine: {'line': b'-- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/package.xml\n'}
+[5.875126] (px4_msgs_old) CommandEnded: {'returncode': 0}
+[5.890469] (px4_msgs_old) JobEnded: {'identifier': 'px4_msgs_old', 'rc': 0}
+[5.910332] (-) TimerEvent: {}
+[6.010572] (-) TimerEvent: {}
+[6.110841] (-) TimerEvent: {}
+[6.211091] (-) TimerEvent: {}
+[6.311350] (-) TimerEvent: {}
+[6.411624] (-) TimerEvent: {}
+[6.511887] (-) TimerEvent: {}
+[6.612127] (-) TimerEvent: {}
+[6.712370] (-) TimerEvent: {}
+[6.812635] (-) TimerEvent: {}
+[6.912935] (-) TimerEvent: {}
+[7.013194] (-) TimerEvent: {}
+[7.113500] (-) TimerEvent: {}
+[7.213763] (-) TimerEvent: {}
+[7.314018] (-) TimerEvent: {}
+[7.414274] (-) TimerEvent: {}
+[7.514535] (-) TimerEvent: {}
+[7.614806] (-) TimerEvent: {}
+[7.715051] (-) TimerEvent: {}
+[7.815315] (-) TimerEvent: {}
+[7.915561] (-) TimerEvent: {}
+[8.015809] (-) TimerEvent: {}
+[8.116066] (-) TimerEvent: {}
+[8.216314] (-) TimerEvent: {}
+[8.316563] (-) TimerEvent: {}
+[8.416849] (-) TimerEvent: {}
+[8.517092] (-) TimerEvent: {}
+[8.617345] (-) TimerEvent: {}
+[8.717619] (-) TimerEvent: {}
+[8.817892] (-) TimerEvent: {}
+[8.918148] (-) TimerEvent: {}
+[9.018412] (-) TimerEvent: {}
+[9.118667] (-) TimerEvent: {}
+[9.218931] (-) TimerEvent: {}
+[9.319182] (-) TimerEvent: {}
+[9.419453] (-) TimerEvent: {}
+[9.519711] (-) TimerEvent: {}
+[9.619984] (-) TimerEvent: {}
+[9.720275] (-) TimerEvent: {}
+[9.820561] (-) TimerEvent: {}
+[9.920861] (-) TimerEvent: {}
+[10.021114] (-) TimerEvent: {}
+[10.121428] (-) TimerEvent: {}
+[10.221702] (-) TimerEvent: {}
+[10.321964] (-) TimerEvent: {}
+[10.422227] (-) TimerEvent: {}
+[10.522488] (-) TimerEvent: {}
+[10.622704] (-) TimerEvent: {}
+[10.722945] (-) TimerEvent: {}
+[10.823192] (-) TimerEvent: {}
+[10.923436] (-) TimerEvent: {}
+[11.023686] (-) TimerEvent: {}
+[11.123973] (-) TimerEvent: {}
+[11.224242] (-) TimerEvent: {}
+[11.324502] (-) TimerEvent: {}
+[11.424765] (-) TimerEvent: {}
+[11.525008] (-) TimerEvent: {}
+[11.625269] (-) TimerEvent: {}
+[11.725527] (-) TimerEvent: {}
+[11.825799] (-) TimerEvent: {}
+[11.926053] (-) TimerEvent: {}
+[12.026317] (-) TimerEvent: {}
+[12.126593] (-) TimerEvent: {}
+[12.226910] (-) TimerEvent: {}
+[12.327160] (-) TimerEvent: {}
+[12.427440] (-) TimerEvent: {}
+[12.527710] (-) TimerEvent: {}
+[12.627988] (-) TimerEvent: {}
+[12.728240] (-) TimerEvent: {}
+[12.828489] (-) TimerEvent: {}
+[12.928712] (-) TimerEvent: {}
+[13.028956] (-) TimerEvent: {}
+[13.129214] (-) TimerEvent: {}
+[13.229447] (-) TimerEvent: {}
+[13.329714] (-) TimerEvent: {}
+[13.429958] (-) TimerEvent: {}
+[13.530195] (-) TimerEvent: {}
+[13.630413] (-) TimerEvent: {}
+[13.730707] (-) TimerEvent: {}
+[13.830958] (-) TimerEvent: {}
+[13.931214] (-) TimerEvent: {}
+[14.031471] (-) TimerEvent: {}
+[14.131706] (-) TimerEvent: {}
+[14.231941] (-) TimerEvent: {}
+[14.332185] (-) TimerEvent: {}
+[14.432428] (-) TimerEvent: {}
+[14.532705] (-) TimerEvent: {}
+[14.632953] (-) TimerEvent: {}
+[14.733248] (-) TimerEvent: {}
+[14.833530] (-) TimerEvent: {}
+[14.933775] (-) TimerEvent: {}
+[15.034022] (-) TimerEvent: {}
+[15.134269] (-) TimerEvent: {}
+[15.234520] (-) TimerEvent: {}
+[15.334782] (-) TimerEvent: {}
+[15.435012] (-) TimerEvent: {}
+[15.535240] (-) TimerEvent: {}
+[15.635469] (-) TimerEvent: {}
+[15.735714] (-) TimerEvent: {}
+[15.835977] (-) TimerEvent: {}
+[15.936241] (-) TimerEvent: {}
+[16.036501] (-) TimerEvent: {}
+[16.136782] (-) TimerEvent: {}
+[16.237041] (-) TimerEvent: {}
+[16.337312] (-) TimerEvent: {}
+[16.437573] (-) TimerEvent: {}
+[16.537851] (-) TimerEvent: {}
+[16.638076] (-) TimerEvent: {}
+[16.738354] (-) TimerEvent: {}
+[16.838623] (-) TimerEvent: {}
+[16.938907] (-) TimerEvent: {}
+[17.039190] (-) TimerEvent: {}
+[17.139471] (-) TimerEvent: {}
+[17.239718] (-) TimerEvent: {}
+[17.340019] (-) TimerEvent: {}
+[17.440313] (-) TimerEvent: {}
+[17.540597] (-) TimerEvent: {}
+[17.640890] (-) TimerEvent: {}
+[17.741172] (-) TimerEvent: {}
+[17.841445] (-) TimerEvent: {}
+[17.941725] (-) TimerEvent: {}
+[18.041960] (-) TimerEvent: {}
+[18.142202] (-) TimerEvent: {}
+[18.242516] (-) TimerEvent: {}
+[18.342878] (-) TimerEvent: {}
+[18.443130] (-) TimerEvent: {}
+[18.543366] (-) TimerEvent: {}
+[18.643615] (-) TimerEvent: {}
+[18.743898] (-) TimerEvent: {}
+[18.844155] (-) TimerEvent: {}
+[18.944416] (-) TimerEvent: {}
+[19.044663] (-) TimerEvent: {}
+[19.144912] (-) TimerEvent: {}
+[19.245166] (-) TimerEvent: {}
+[19.345459] (-) TimerEvent: {}
+[19.445782] (-) TimerEvent: {}
+[19.546044] (-) TimerEvent: {}
+[19.646320] (-) TimerEvent: {}
+[19.746584] (-) TimerEvent: {}
+[19.846854] (-) TimerEvent: {}
+[19.947121] (-) TimerEvent: {}
+[20.047378] (-) TimerEvent: {}
+[20.147622] (-) TimerEvent: {}
+[20.247866] (-) TimerEvent: {}
+[20.348106] (-) TimerEvent: {}
+[20.448346] (-) TimerEvent: {}
+[20.548577] (-) TimerEvent: {}
+[20.648825] (-) TimerEvent: {}
+[20.749067] (-) TimerEvent: {}
+[20.849341] (-) TimerEvent: {}
+[20.949601] (-) TimerEvent: {}
+[21.049875] (-) TimerEvent: {}
+[21.150132] (-) TimerEvent: {}
+[21.250373] (-) TimerEvent: {}
+[21.350626] (-) TimerEvent: {}
+[21.450894] (-) TimerEvent: {}
+[21.551152] (-) TimerEvent: {}
+[21.651387] (-) TimerEvent: {}
+[21.751635] (-) TimerEvent: {}
+[21.851898] (-) TimerEvent: {}
+[21.952160] (-) TimerEvent: {}
+[22.052426] (-) TimerEvent: {}
+[22.152706] (-) TimerEvent: {}
+[22.252979] (-) TimerEvent: {}
+[22.353307] (-) TimerEvent: {}
+[22.453563] (-) TimerEvent: {}
+[22.553831] (-) TimerEvent: {}
+[22.654079] (-) TimerEvent: {}
+[22.754351] (-) TimerEvent: {}
+[22.854636] (-) TimerEvent: {}
+[22.954877] (-) TimerEvent: {}
+[23.055126] (-) TimerEvent: {}
+[23.155389] (-) TimerEvent: {}
+[23.255635] (-) TimerEvent: {}
+[23.355913] (-) TimerEvent: {}
+[23.456190] (-) TimerEvent: {}
+[23.556446] (-) TimerEvent: {}
+[23.656706] (-) TimerEvent: {}
+[23.756965] (-) TimerEvent: {}
+[23.857231] (-) TimerEvent: {}
+[23.957489] (-) TimerEvent: {}
+[24.057784] (-) TimerEvent: {}
+[24.158044] (-) TimerEvent: {}
+[24.258280] (-) TimerEvent: {}
+[24.358517] (-) TimerEvent: {}
+[24.458762] (-) TimerEvent: {}
+[24.559021] (-) TimerEvent: {}
+[24.659287] (-) TimerEvent: {}
+[24.759551] (-) TimerEvent: {}
+[24.859841] (-) TimerEvent: {}
+[24.960139] (-) TimerEvent: {}
+[25.060394] (-) TimerEvent: {}
+[25.160637] (-) TimerEvent: {}
+[25.260897] (-) TimerEvent: {}
+[25.361147] (-) TimerEvent: {}
+[25.461402] (-) TimerEvent: {}
+[25.561644] (-) TimerEvent: {}
+[25.661894] (-) TimerEvent: {}
+[25.762124] (-) TimerEvent: {}
+[25.862371] (-) TimerEvent: {}
+[25.962622] (-) TimerEvent: {}
+[26.062914] (-) TimerEvent: {}
+[26.163206] (-) TimerEvent: {}
+[26.263476] (-) TimerEvent: {}
+[26.363709] (-) TimerEvent: {}
+[26.463968] (-) TimerEvent: {}
+[26.564232] (-) TimerEvent: {}
+[26.664507] (-) TimerEvent: {}
+[26.764778] (-) TimerEvent: {}
+[26.865038] (-) TimerEvent: {}
+[26.965289] (-) TimerEvent: {}
+[27.065540] (-) TimerEvent: {}
+[27.165806] (-) TimerEvent: {}
+[27.266065] (-) TimerEvent: {}
+[27.366322] (-) TimerEvent: {}
+[27.466596] (-) TimerEvent: {}
+[27.566928] (-) TimerEvent: {}
+[27.667188] (-) TimerEvent: {}
+[27.767447] (-) TimerEvent: {}
+[27.867704] (-) TimerEvent: {}
+[27.967953] (-) TimerEvent: {}
+[28.068218] (-) TimerEvent: {}
+[28.168473] (-) TimerEvent: {}
+[28.268704] (-) TimerEvent: {}
+[28.368943] (-) TimerEvent: {}
+[28.469189] (-) TimerEvent: {}
+[28.569436] (-) TimerEvent: {}
+[28.669706] (-) TimerEvent: {}
+[28.769982] (-) TimerEvent: {}
+[28.870259] (-) TimerEvent: {}
+[28.970508] (-) TimerEvent: {}
+[29.070800] (-) TimerEvent: {}
+[29.171047] (-) TimerEvent: {}
+[29.271307] (-) TimerEvent: {}
+[29.371575] (-) TimerEvent: {}
+[29.471873] (-) TimerEvent: {}
+[29.572131] (-) TimerEvent: {}
+[29.672368] (-) TimerEvent: {}
+[29.772607] (-) TimerEvent: {}
+[29.872869] (-) TimerEvent: {}
+[29.973132] (-) TimerEvent: {}
+[30.073399] (-) TimerEvent: {}
+[30.173704] (-) TimerEvent: {}
+[30.273982] (-) TimerEvent: {}
+[30.374251] (-) TimerEvent: {}
+[30.474530] (-) TimerEvent: {}
+[30.574794] (-) TimerEvent: {}
+[30.675041] (-) TimerEvent: {}
+[30.775282] (-) TimerEvent: {}
+[30.878063] (-) TimerEvent: {}
+[30.978617] (-) TimerEvent: {}
+[31.079112] (-) TimerEvent: {}
+[31.179573] (-) TimerEvent: {}
+[31.280076] (-) TimerEvent: {}
+[31.381823] (-) TimerEvent: {}
+[31.482493] (-) TimerEvent: {}
+[31.582968] (-) TimerEvent: {}
+[31.683449] (-) TimerEvent: {}
+[31.784953] (-) TimerEvent: {}
+[31.885406] (-) TimerEvent: {}
+[31.987001] (-) TimerEvent: {}
+[32.087445] (-) TimerEvent: {}
+[32.188733] (-) TimerEvent: {}
+[32.289216] (-) TimerEvent: {}
+[32.389838] (-) TimerEvent: {}
+[32.464134] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.o\x1b[0m\n'}
+[32.465254] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.c.o\x1b[0m\n'}
+[32.465456] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_controls_status__functions.c.o\x1b[0m\n'}
+[32.467041] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_armed__functions.c.o\x1b[0m\n'}
+[32.468983] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_motors__functions.c.o\x1b[0m\n'}
+[32.473605] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_outputs__functions.c.o\x1b[0m\n'}
+[32.474331] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_servos_trim__functions.c.o\x1b[0m\n'}
+[32.478119] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_test__functions.c.o\x1b[0m\n'}
+[32.479744] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_servos__functions.c.o\x1b[0m\n'}
+[32.480003] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/adc_report__functions.c.o\x1b[0m\n'}
+[32.480948] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed__functions.c.o\x1b[0m\n'}
+[32.489986] (-) TimerEvent: {}
+[32.505385] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed_wind__functions.c.o\x1b[0m\n'}
+[32.505877] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed_validated__functions.c.o\x1b[0m\n'}
+[32.510332] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/arming_check_reply__functions.c.o\x1b[0m\n'}
+[32.536886] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.o\x1b[0m\n'}
+[32.538187] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/autotune_attitude_control_status__functions.c.o\x1b[0m\n'}
+[32.541941] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/arming_check_request__functions.c.o\x1b[0m\n'}
+[32.542225] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o\x1b[0m\n'}
+[32.542322] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o\x1b[0m\n'}
+[32.542404] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o\x1b[0m\n'}
+[32.542488] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o\x1b[0m\n'}
+[32.542572] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o\x1b[0m\n'}
+[32.542678] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o\x1b[0m\n'}
+[32.556404] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o\x1b[0m\n'}
+[32.568027] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o\x1b[0m\n'}
+[32.581164] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o\x1b[0m\n'}
+[32.584660] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o\x1b[0m\n'}
+[32.591602] (-) TimerEvent: {}
+[32.600121] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o\x1b[0m\n'}
+[32.602831] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o\x1b[0m\n'}
+[32.603174] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o\x1b[0m\n'}
+[32.603399] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o\x1b[0m\n'}
+[32.609744] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o\x1b[0m\n'}
+[32.611048] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o\x1b[0m\n'}
+[32.621357] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o\x1b[0m\n'}
+[32.621730] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_velocity_setpoint__functions.c.o\x1b[0m\n'}
+[32.632629] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o\x1b[0m\n'}
+[32.639867] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o\x1b[0m\n'}
+[32.643301] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o\x1b[0m\n'}
+[32.648581] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o\x1b[0m\n'}
+[32.654823] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o\x1b[0m\n'}
+[32.660085] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o\x1b[0m\n'}
+[32.668760] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o\x1b[0m\n'}
+[32.680155] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o\x1b[0m\n'}
+[32.688136] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o\x1b[0m\n'}
+[32.688508] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o\x1b[0m\n'}
+[32.692330] (-) TimerEvent: {}
+[32.692799] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o\x1b[0m\n'}
+[32.701260] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o\x1b[0m\n'}
+[32.705801] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o\x1b[0m\n'}
+[32.713046] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o\x1b[0m\n'}
+[32.713374] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o\x1b[0m\n'}
+[32.715000] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o\x1b[0m\n'}
+[32.715179] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o\x1b[0m\n'}
+[32.720288] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o\x1b[0m\n'}
+[32.720640] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o\x1b[0m\n'}
+[32.740295] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o\x1b[0m\n'}
+[32.744933] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o\x1b[0m\n'}
+[32.752378] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o\x1b[0m\n'}
+[32.754411] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o\x1b[0m\n'}
+[32.757393] (px4_msgs) StdoutLine: {'line': b'[  3%] Built target px4_msgs__cpp\n'}
+[32.760043] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o\x1b[0m\n'}
+[32.760337] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o\x1b[0m\n'}
+[32.764192] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o\x1b[0m\n'}
+[32.771688] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o\x1b[0m\n'}
+[32.785338] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o\x1b[0m\n'}
+[32.785767] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o\x1b[0m\n'}
+[32.785945] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o\x1b[0m\n'}
+[32.786682] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[32.793331] (-) TimerEvent: {}
+[32.793791] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o\x1b[0m\n'}
+[32.797718] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[32.798156] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o\x1b[0m\n'}
+[32.805770] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[32.811926] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o\x1b[0m\n'}
+[32.812190] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o\x1b[0m\n'}
+[32.821447] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o\x1b[0m\n'}
+[32.829032] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o\x1b[0m\n'}
+[32.834320] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o\x1b[0m\n'}
+[32.834583] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o\x1b[0m\n'}
+[32.834722] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o\x1b[0m\n'}
+[32.848633] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o\x1b[0m\n'}
+[32.852869] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o\x1b[0m\n'}
+[32.857763] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o\x1b[0m\n'}
+[32.858052] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o\x1b[0m\n'}
+[32.868491] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o\x1b[0m\n'}
+[32.871722] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o\x1b[0m\n'}
+[32.877358] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o\x1b[0m\n'}
+[32.890164] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o\x1b[0m\n'}
+[32.893439] (-) TimerEvent: {}
+[32.897789] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o\x1b[0m\n'}
+[32.898104] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o\x1b[0m\n'}
+[32.900016] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o\x1b[0m\n'}
+[32.900238] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o\x1b[0m\n'}
+[32.901771] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o\x1b[0m\n'}
+[32.918284] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/iridiumsbd_status__functions.c.o\x1b[0m\n'}
+[32.923987] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_gear__functions.c.o\x1b[0m\n'}
+[32.925666] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/irlock_report__functions.c.o\x1b[0m\n'}
+[32.925992] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c.o\x1b[0m\n'}
+[32.942600] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__functions.c.o\x1b[0m\n'}
+[32.942866] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__functions.c.o\x1b[0m\n'}
+[32.948939] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_target_pose__functions.c.o\x1b[0m\n'}
+[32.959094] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/led_control__functions.c.o\x1b[0m\n'}
+[32.959378] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/launch_detection_status__functions.c.o\x1b[0m\n'}
+[32.965892] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/log_message__functions.c.o\x1b[0m\n'}
+[32.967916] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/logger_status__functions.c.o\x1b[0m\n'}
+[32.973510] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mag_worker_data__functions.c.o\x1b[0m\n'}
+[32.973870] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/magnetometer_bias_estimate__functions.c.o\x1b[0m\n'}
+[32.992403] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/manual_control_switches__functions.c.o\x1b[0m\n'}
+[32.992709] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/manual_control_setpoint__functions.c.o\x1b[0m\n'}
+[32.993742] (-) TimerEvent: {}
+[32.998165] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mavlink_log__functions.c.o\x1b[0m\n'}
+[33.009731] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mavlink_tunnel__functions.c.o\x1b[0m\n'}
+[33.010019] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/message_format_request__functions.c.o\x1b[0m\n'}
+[33.014372] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/message_format_response__functions.c.o\x1b[0m\n'}
+[33.018698] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mission__functions.c.o\x1b[0m\n'}
+[33.018981] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mission_result__functions.c.o\x1b[0m\n'}
+[33.032843] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mode_completed__functions.c.o\x1b[0m\n'}
+[33.034530] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mount_orientation__functions.c.o\x1b[0m\n'}
+[33.037936] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.o\x1b[0m\n'}
+[33.038240] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.c.o\x1b[0m\n'}
+[33.050275] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.c.o\x1b[0m\n'}
+[33.063619] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/npfg_status__functions.c.o\x1b[0m\n'}
+[33.070544] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__functions.c.o\x1b[0m\n'}
+[33.070792] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.c.o\x1b[0m\n'}
+[33.070938] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/offboard_control_mode__functions.c.o\x1b[0m\n'}
+[33.084159] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.o\x1b[0m\n'}
+[33.087984] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.o\x1b[0m\n'}
+[33.088202] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.o\x1b[0m\n'}
+[33.093876] (-) TimerEvent: {}
+[33.097786] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.o\x1b[0m\n'}
+[33.104714] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test_large__functions.c.o\x1b[0m\n'}
+[33.105003] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.c.o\x1b[0m\n'}
+[33.109138] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test_medium__functions.c.o\x1b[0m\n'}
+[33.112264] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orbit_status__functions.c.o\x1b[0m\n'}
+[33.113317] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_reset_request__functions.c.o\x1b[0m\n'}
+[33.138110] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_set_used_request__functions.c.o\x1b[0m\n'}
+[33.139668] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_set_value_request__functions.c.o\x1b[0m\n'}
+[33.145874] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_update__functions.c.o\x1b[0m\n'}
+[33.148815] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_set_value_response__functions.c.o\x1b[0m\n'}
+[33.154141] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ping__functions.c.o\x1b[0m\n'}
+[33.156523] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_controller_landing_status__functions.c.o\x1b[0m\n'}
+[33.160408] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_controller_status__functions.c.o\x1b[0m\n'}
+[33.162269] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_setpoint__functions.c.o\x1b[0m\n'}
+[33.166736] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_setpoint_triplet__functions.c.o\x1b[0m\n'}
+[33.171382] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/power_button_state__functions.c.o\x1b[0m\n'}
+[33.179558] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/power_monitor__functions.c.o\x1b[0m\n'}
+[33.180124] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.c.o\x1b[0m\n'}
+[33.183218] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.o\x1b[0m\n'}
+[33.194007] (-) TimerEvent: {}
+[33.206820] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/px4io_status__functions.c.o\x1b[0m\n'}
+[33.208906] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.c.o\x1b[0m\n'}
+[33.215859] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/qshell_retval__functions.c.o\x1b[0m\n'}
+[33.216115] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/qshell_req__functions.c.o\x1b[0m\n'}
+[33.228093] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/radio_status__functions.c.o\x1b[0m\n'}
+[33.228379] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rate_ctrl_status__functions.c.o\x1b[0m\n'}
+[33.234015] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rc_channels__functions.c.o\x1b[0m\n'}
+[33.234286] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__functions.c.o\x1b[0m\n'}
+[33.234451] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rc_parameter_map__functions.c.o\x1b[0m\n'}
+[33.235683] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.o\x1b[0m\n'}
+[33.248732] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o\x1b[0m\n'}
+[33.252801] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o\x1b[0m\n'}
+[33.257714] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.o\x1b[0m\n'}
+[33.279052] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o\x1b[0m\n'}
+[33.279346] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o\x1b[0m\n'}
+[33.279455] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o\x1b[0m\n'}
+[33.284711] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o\x1b[0m\n'}
+[33.293089] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o\x1b[0m\n'}
+[33.293329] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o\x1b[0m\n'}
+[33.294782] (-) TimerEvent: {}
+[33.302273] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o\x1b[0m\n'}
+[33.302595] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o\x1b[0m\n'}
+[33.303761] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o\x1b[0m\n'}
+[33.311727] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o\x1b[0m\n'}
+[33.314727] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o\x1b[0m\n'}
+[33.321545] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o\x1b[0m\n'}
+[33.321863] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o\x1b[0m\n'}
+[33.342674] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o\x1b[0m\n'}
+[33.347149] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o\x1b[0m\n'}
+[33.347410] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o\x1b[0m\n'}
+[33.358405] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o\x1b[0m\n'}
+[33.359045] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o\x1b[0m\n'}
+[33.366265] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o\x1b[0m\n'}
+[33.366535] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o\x1b[0m\n'}
+[33.372436] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o\x1b[0m\n'}
+[33.381484] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o\x1b[0m\n'}
+[33.385968] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o\x1b[0m\n'}
+[33.386232] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o\x1b[0m\n'}
+[33.392477] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o\x1b[0m\n'}
+[33.397784] (-) TimerEvent: {}
+[33.398134] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o\x1b[0m\n'}
+[33.406337] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o\x1b[0m\n'}
+[33.415735] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o\x1b[0m\n'}
+[33.421807] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o\x1b[0m\n'}
+[33.432808] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o\x1b[0m\n'}
+[33.437946] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o\x1b[0m\n'}
+[33.450690] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o\x1b[0m\n'}
+[33.450940] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o\x1b[0m\n'}
+[33.453983] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o\x1b[0m\n'}
+[33.459561] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o\x1b[0m\n'}
+[33.459884] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o\x1b[0m\n'}
+[33.462029] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint6dof__functions.c.o\x1b[0m\n'}
+[33.470627] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o\x1b[0m\n'}
+[33.470917] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o\x1b[0m\n'}
+[33.483385] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o\x1b[0m\n'}
+[33.497351] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o\x1b[0m\n'}
+[33.497581] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o\x1b[0m\n'}
+[33.498539] (-) TimerEvent: {}
+[33.514069] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o\x1b[0m\n'}
+[33.516952] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o\x1b[0m\n'}
+[33.521157] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o\x1b[0m\n'}
+[33.521522] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o\x1b[0m\n'}
+[33.530136] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o\x1b[0m\n'}
+[33.531617] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o\x1b[0m\n'}
+[33.538130] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o\x1b[0m\n'}
+[33.538552] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o\x1b[0m\n'}
+[33.543392] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o\x1b[0m\n'}
+[33.560797] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o\x1b[0m\n'}
+[33.561056] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o\x1b[0m\n'}
+[33.564143] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o\x1b[0m\n'}
+[33.571737] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o\x1b[0m\n'}
+[33.584927] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o\x1b[0m\n'}
+[33.585225] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o\x1b[0m\n'}
+[33.590982] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o\x1b[0m\n'}
+[33.592394] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o\x1b[0m\n'}
+[33.592602] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o\x1b[0m\n'}
+[33.596133] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o\x1b[0m\n'}
+[33.598724] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o\x1b[0m\n'}
+[33.598964] (-) TimerEvent: {}
+[33.602643] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o\x1b[0m\n'}
+[33.622804] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o\x1b[0m\n'}
+[33.631392] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o\x1b[0m\n'}
+[33.632507] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o\x1b[0m\n'}
+[33.633606] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o\x1b[0m\n'}
+[33.638183] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o\x1b[0m\n'}
+[33.655686] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o\x1b[0m\n'}
+[33.655983] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o\x1b[0m\n'}
+[33.662436] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o\x1b[0m\n'}
+[33.665068] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o\x1b[0m\n'}
+[33.665412] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o\x1b[0m\n'}
+[33.669802] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o\x1b[0m\n'}
+[33.671820] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o\x1b[0m\n'}
+[33.699096] (-) TimerEvent: {}
+[33.734017] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libpx4_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[33.799201] (-) TimerEvent: {}
+[33.821479] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[33.838384] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[33.838857] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[33.838995] (px4_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[33.899304] (-) TimerEvent: {}
+[33.999608] (-) TimerEvent: {}
+[34.099883] (-) TimerEvent: {}
+[34.200121] (-) TimerEvent: {}
+[34.300384] (-) TimerEvent: {}
+[34.400663] (-) TimerEvent: {}
+[34.500945] (-) TimerEvent: {}
+[34.601227] (-) TimerEvent: {}
+[34.701516] (-) TimerEvent: {}
+[34.801842] (-) TimerEvent: {}
+[34.902133] (-) TimerEvent: {}
+[35.002429] (-) TimerEvent: {}
+[35.102710] (-) TimerEvent: {}
+[35.202992] (-) TimerEvent: {}
+[35.303271] (-) TimerEvent: {}
+[35.403533] (-) TimerEvent: {}
+[35.503833] (-) TimerEvent: {}
+[35.604100] (-) TimerEvent: {}
+[35.704360] (-) TimerEvent: {}
+[35.804641] (-) TimerEvent: {}
+[35.904971] (-) TimerEvent: {}
+[36.005279] (-) TimerEvent: {}
+[36.105574] (-) TimerEvent: {}
+[36.205864] (-) TimerEvent: {}
+[36.306171] (-) TimerEvent: {}
+[36.406451] (-) TimerEvent: {}
+[36.506715] (-) TimerEvent: {}
+[36.607012] (-) TimerEvent: {}
+[36.707276] (-) TimerEvent: {}
+[36.807603] (-) TimerEvent: {}
+[36.908016] (-) TimerEvent: {}
+[37.008341] (-) TimerEvent: {}
+[37.108634] (-) TimerEvent: {}
+[37.208932] (-) TimerEvent: {}
+[37.309189] (-) TimerEvent: {}
+[37.409431] (-) TimerEvent: {}
+[37.509706] (-) TimerEvent: {}
+[37.609985] (-) TimerEvent: {}
+[37.710295] (-) TimerEvent: {}
+[37.810550] (-) TimerEvent: {}
+[37.910827] (-) TimerEvent: {}
+[38.011078] (-) TimerEvent: {}
+[38.111334] (-) TimerEvent: {}
+[38.211618] (-) TimerEvent: {}
+[38.311923] (-) TimerEvent: {}
+[38.412249] (-) TimerEvent: {}
+[38.512541] (-) TimerEvent: {}
+[38.612844] (-) TimerEvent: {}
+[38.713112] (-) TimerEvent: {}
+[38.813383] (-) TimerEvent: {}
+[38.913661] (-) TimerEvent: {}
+[39.013913] (-) TimerEvent: {}
+[39.114169] (-) TimerEvent: {}
+[39.214444] (-) TimerEvent: {}
+[39.314758] (-) TimerEvent: {}
+[39.415072] (-) TimerEvent: {}
+[39.515376] (-) TimerEvent: {}
+[39.615686] (-) TimerEvent: {}
+[39.715980] (-) TimerEvent: {}
+[39.816265] (-) TimerEvent: {}
+[39.916626] (-) TimerEvent: {}
+[40.016947] (-) TimerEvent: {}
+[40.117223] (-) TimerEvent: {}
+[40.217503] (-) TimerEvent: {}
+[40.317821] (-) TimerEvent: {}
+[40.418108] (-) TimerEvent: {}
+[40.518392] (-) TimerEvent: {}
+[40.618713] (-) TimerEvent: {}
+[40.718977] (-) TimerEvent: {}
+[40.819262] (-) TimerEvent: {}
+[40.919601] (-) TimerEvent: {}
+[41.019902] (-) TimerEvent: {}
+[41.120184] (-) TimerEvent: {}
+[41.220476] (-) TimerEvent: {}
+[41.320716] (-) TimerEvent: {}
+[41.420973] (-) TimerEvent: {}
+[41.521240] (-) TimerEvent: {}
+[41.621491] (-) TimerEvent: {}
+[41.721724] (-) TimerEvent: {}
+[41.822042] (-) TimerEvent: {}
+[41.922306] (-) TimerEvent: {}
+[42.022549] (-) TimerEvent: {}
+[42.122826] (-) TimerEvent: {}
+[42.223111] (-) TimerEvent: {}
+[42.323370] (-) TimerEvent: {}
+[42.423616] (-) TimerEvent: {}
+[42.523875] (-) TimerEvent: {}
+[42.624127] (-) TimerEvent: {}
+[42.724386] (-) TimerEvent: {}
+[42.824676] (-) TimerEvent: {}
+[42.924939] (-) TimerEvent: {}
+[43.025215] (-) TimerEvent: {}
+[43.125472] (-) TimerEvent: {}
+[43.225709] (-) TimerEvent: {}
+[43.325970] (-) TimerEvent: {}
+[43.426256] (-) TimerEvent: {}
+[43.526641] (-) TimerEvent: {}
+[43.626998] (-) TimerEvent: {}
+[43.727260] (-) TimerEvent: {}
+[43.827537] (-) TimerEvent: {}
+[43.927826] (-) TimerEvent: {}
+[44.028112] (-) TimerEvent: {}
+[44.128370] (-) TimerEvent: {}
+[44.228642] (-) TimerEvent: {}
+[44.328951] (-) TimerEvent: {}
+[44.429237] (-) TimerEvent: {}
+[44.529526] (-) TimerEvent: {}
+[44.629802] (-) TimerEvent: {}
+[44.730064] (-) TimerEvent: {}
+[44.830323] (-) TimerEvent: {}
+[44.930583] (-) TimerEvent: {}
+[45.030854] (-) TimerEvent: {}
+[45.131096] (-) TimerEvent: {}
+[45.231363] (-) TimerEvent: {}
+[45.331659] (-) TimerEvent: {}
+[45.431929] (-) TimerEvent: {}
+[45.532242] (-) TimerEvent: {}
+[45.632510] (-) TimerEvent: {}
+[45.732801] (-) TimerEvent: {}
+[45.833084] (-) TimerEvent: {}
+[45.933378] (-) TimerEvent: {}
+[46.033627] (-) TimerEvent: {}
+[46.133907] (-) TimerEvent: {}
+[46.234177] (-) TimerEvent: {}
+[46.334484] (-) TimerEvent: {}
+[46.434810] (-) TimerEvent: {}
+[46.535077] (-) TimerEvent: {}
+[46.635342] (-) TimerEvent: {}
+[46.735617] (-) TimerEvent: {}
+[46.835900] (-) TimerEvent: {}
+[46.936160] (-) TimerEvent: {}
+[47.036401] (-) TimerEvent: {}
+[47.136626] (-) TimerEvent: {}
+[47.236917] (-) TimerEvent: {}
+[47.337177] (-) TimerEvent: {}
+[47.437431] (-) TimerEvent: {}
+[47.537708] (-) TimerEvent: {}
+[47.637973] (-) TimerEvent: {}
+[47.738235] (-) TimerEvent: {}
+[47.838483] (-) TimerEvent: {}
+[47.938709] (-) TimerEvent: {}
+[48.038961] (-) TimerEvent: {}
+[48.139225] (-) TimerEvent: {}
+[48.239526] (-) TimerEvent: {}
+[48.339799] (-) TimerEvent: {}
+[48.440068] (-) TimerEvent: {}
+[48.540339] (-) TimerEvent: {}
+[48.640579] (-) TimerEvent: {}
+[48.740836] (-) TimerEvent: {}
+[48.841104] (-) TimerEvent: {}
+[48.941384] (-) TimerEvent: {}
+[49.041707] (-) TimerEvent: {}
+[49.141976] (-) TimerEvent: {}
+[49.242218] (-) TimerEvent: {}
+[49.342482] (-) TimerEvent: {}
+[49.442718] (-) TimerEvent: {}
+[49.542991] (-) TimerEvent: {}
+[49.643263] (-) TimerEvent: {}
+[49.743584] (-) TimerEvent: {}
+[49.843914] (-) TimerEvent: {}
+[49.944213] (-) TimerEvent: {}
+[50.044513] (-) TimerEvent: {}
+[50.144818] (-) TimerEvent: {}
+[50.245086] (-) TimerEvent: {}
+[50.345364] (-) TimerEvent: {}
+[50.445667] (-) TimerEvent: {}
+[50.545942] (-) TimerEvent: {}
+[50.646248] (-) TimerEvent: {}
+[50.746556] (-) TimerEvent: {}
+[50.846838] (-) TimerEvent: {}
+[50.947089] (-) TimerEvent: {}
+[51.047393] (-) TimerEvent: {}
+[51.147687] (-) TimerEvent: {}
+[51.247945] (-) TimerEvent: {}
+[51.348202] (-) TimerEvent: {}
+[51.448445] (-) TimerEvent: {}
+[51.548721] (-) TimerEvent: {}
+[51.649055] (-) TimerEvent: {}
+[51.749385] (-) TimerEvent: {}
+[51.849679] (-) TimerEvent: {}
+[51.949923] (-) TimerEvent: {}
+[52.050167] (-) TimerEvent: {}
+[52.150426] (-) TimerEvent: {}
+[52.250712] (-) TimerEvent: {}
+[52.350969] (-) TimerEvent: {}
+[52.451217] (-) TimerEvent: {}
+[52.551468] (-) TimerEvent: {}
+[52.651784] (-) TimerEvent: {}
+[52.752074] (-) TimerEvent: {}
+[52.852344] (-) TimerEvent: {}
+[52.952616] (-) TimerEvent: {}
+[53.052904] (-) TimerEvent: {}
+[53.153175] (-) TimerEvent: {}
+[53.253446] (-) TimerEvent: {}
+[53.353707] (-) TimerEvent: {}
+[53.453998] (-) TimerEvent: {}
+[53.554303] (-) TimerEvent: {}
+[53.654574] (-) TimerEvent: {}
+[53.754849] (-) TimerEvent: {}
+[53.855102] (-) TimerEvent: {}
+[53.955371] (-) TimerEvent: {}
+[54.055681] (-) TimerEvent: {}
+[54.155953] (-) TimerEvent: {}
+[54.256233] (-) TimerEvent: {}
+[54.356531] (-) TimerEvent: {}
+[54.456902] (-) TimerEvent: {}
+[54.557204] (-) TimerEvent: {}
+[54.657480] (-) TimerEvent: {}
+[54.757727] (-) TimerEvent: {}
+[54.857976] (-) TimerEvent: {}
+[54.958216] (-) TimerEvent: {}
+[55.058487] (-) TimerEvent: {}
+[55.158712] (-) TimerEvent: {}
+[55.258975] (-) TimerEvent: {}
+[55.359250] (-) TimerEvent: {}
+[55.459497] (-) TimerEvent: {}
+[55.559723] (-) TimerEvent: {}
+[55.660025] (-) TimerEvent: {}
+[55.760295] (-) TimerEvent: {}
+[55.860596] (-) TimerEvent: {}
+[55.960870] (-) TimerEvent: {}
+[56.061133] (-) TimerEvent: {}
+[56.161415] (-) TimerEvent: {}
+[56.261719] (-) TimerEvent: {}
+[56.361998] (-) TimerEvent: {}
+[56.462258] (-) TimerEvent: {}
+[56.562524] (-) TimerEvent: {}
+[56.662813] (-) TimerEvent: {}
+[56.763086] (-) TimerEvent: {}
+[56.863368] (-) TimerEvent: {}
+[56.963640] (-) TimerEvent: {}
+[57.063953] (-) TimerEvent: {}
+[57.164205] (-) TimerEvent: {}
+[57.264480] (-) TimerEvent: {}
+[57.364725] (-) TimerEvent: {}
+[57.465003] (-) TimerEvent: {}
+[57.565273] (-) TimerEvent: {}
+[57.665537] (-) TimerEvent: {}
+[57.765922] (-) TimerEvent: {}
+[57.866188] (-) TimerEvent: {}
+[57.966460] (-) TimerEvent: {}
+[58.066716] (-) TimerEvent: {}
+[58.166981] (-) TimerEvent: {}
+[58.267250] (-) TimerEvent: {}
+[58.367542] (-) TimerEvent: {}
+[58.468087] (-) TimerEvent: {}
+[58.569455] (-) TimerEvent: {}
+[58.670002] (-) TimerEvent: {}
+[58.764786] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_servos_trim__type_support.cpp.o\x1b[0m\n'}
+[58.765041] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_controls_status__type_support.cpp.o\x1b[0m\n'}
+[58.765132] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_outputs__type_support.cpp.o\x1b[0m\n'}
+[58.765195] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_servos__type_support.cpp.o\x1b[0m\n'}
+[58.765252] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o\x1b[0m\n'}
+[58.765325] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp.o\x1b[0m\n'}
+[58.765410] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_armed__type_support.cpp.o\x1b[0m\n'}
+[58.765505] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_motors__type_support.cpp.o\x1b[0m\n'}
+[58.765595] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_test__type_support.cpp.o\x1b[0m\n'}
+[58.765847] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/airspeed__type_support.cpp.o\x1b[0m\n'}
+[58.766259] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/adc_report__type_support.cpp.o\x1b[0m\n'}
+[58.772009] (-) TimerEvent: {}
+[58.872413] (-) TimerEvent: {}
+[58.972828] (-) TimerEvent: {}
+[59.074733] (-) TimerEvent: {}
+[59.169584] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/airspeed_validated__type_support.cpp.o\x1b[0m\n'}
+[59.174873] (-) TimerEvent: {}
+[59.177562] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/airspeed_wind__type_support.cpp.o\x1b[0m\n'}
+[59.195400] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/arming_check_reply__type_support.cpp.o\x1b[0m\n'}
+[59.213660] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/autotune_attitude_control_status__type_support.cpp.o\x1b[0m\n'}
+[59.214967] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/arming_check_request__type_support.cpp.o\x1b[0m\n'}
+[59.224811] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.cpp.o\x1b[0m\n'}
+[59.225819] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/button_event__type_support.cpp.o\x1b[0m\n'}
+[59.237793] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/camera_capture__type_support.cpp.o\x1b[0m\n'}
+[59.250536] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/camera_status__type_support.cpp.o\x1b[0m\n'}
+[59.274989] (-) TimerEvent: {}
+[59.291753] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/camera_trigger__type_support.cpp.o\x1b[0m\n'}
+[59.320558] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/can_interface_status__type_support.cpp.o\x1b[0m\n'}
+[59.380209] (-) TimerEvent: {}
+[59.480584] (-) TimerEvent: {}
+[59.583932] (-) TimerEvent: {}
+[59.601499] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/cellular_status__type_support.cpp.o\x1b[0m\n'}
+[59.613889] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.cpp.o\x1b[0m\n'}
+[59.644825] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/config_overrides__type_support.cpp.o\x1b[0m\n'}
+[59.664379] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/control_allocator_status__type_support.cpp.o\x1b[0m\n'}
+[59.667633] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/cpuload__type_support.cpp.o\x1b[0m\n'}
+[59.679494] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/dataman_request__type_support.cpp.o\x1b[0m\n'}
+[59.684044] (-) TimerEvent: {}
+[59.696347] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/dataman_response__type_support.cpp.o\x1b[0m\n'}
+[59.713343] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_array__type_support.cpp.o\x1b[0m\n'}
+[59.737334] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_key_value__type_support.cpp.o\x1b[0m\n'}
+[59.786503] (-) TimerEvent: {}
+[59.814136] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_value__type_support.cpp.o\x1b[0m\n'}
+[59.861188] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.cpp.o\x1b[0m\n'}
+[59.886635] (-) TimerEvent: {}
+[59.987062] (-) TimerEvent: {}
+[60.029341] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/differential_velocity_setpoint__type_support.cpp.o\x1b[0m\n'}
+[60.031132] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/differential_pressure__type_support.cpp.o\x1b[0m\n'}
+[60.041737] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.cpp.o\x1b[0m\n'}
+[60.072110] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o\x1b[0m\n'}
+[60.082483] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/ekf2_timestamps__type_support.cpp.o\x1b[0m\n'}
+[60.087187] (-) TimerEvent: {}
+[60.144085] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/esc_report__type_support.cpp.o\x1b[0m\n'}
+[60.150684] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/esc_status__type_support.cpp.o\x1b[0m\n'}
+[60.181835] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_aid_source1d__type_support.cpp.o\x1b[0m\n'}
+[60.187323] (-) TimerEvent: {}
+[60.189117] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_aid_source2d__type_support.cpp.o\x1b[0m\n'}
+[60.278851] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_aid_source3d__type_support.cpp.o\x1b[0m\n'}
+[60.288736] (-) TimerEvent: {}
+[60.319018] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_bias__type_support.cpp.o\x1b[0m\n'}
+[60.392630] (-) TimerEvent: {}
+[60.447983] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_bias3d__type_support.cpp.o\x1b[0m\n'}
+[60.457284] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_event_flags__type_support.cpp.o\x1b[0m\n'}
+[60.492753] (-) TimerEvent: {}
+[60.498268] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_gps_status__type_support.cpp.o\x1b[0m\n'}
+[60.558793] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_innovations__type_support.cpp.o\x1b[0m\n'}
+[60.577830] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_selector_status__type_support.cpp.o\x1b[0m\n'}
+[60.578170] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_sensor_bias__type_support.cpp.o\x1b[0m\n'}
+[60.592875] (-) TimerEvent: {}
+[60.600340] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_states__type_support.cpp.o\x1b[0m\n'}
+[60.613755] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_status__type_support.cpp.o\x1b[0m\n'}
+[60.651962] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_status_flags__type_support.cpp.o\x1b[0m\n'}
+[60.695440] (-) TimerEvent: {}
+[60.742012] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/event__type_support.cpp.o\x1b[0m\n'}
+[60.796746] (-) TimerEvent: {}
+[60.873746] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/failsafe_flags__type_support.cpp.o\x1b[0m\n'}
+[60.896881] (-) TimerEvent: {}
+[60.903245] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/failure_detector_status__type_support.cpp.o\x1b[0m\n'}
+[60.903968] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/figure_eight_status__type_support.cpp.o\x1b[0m\n'}
+[60.972518] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/flight_phase_estimation__type_support.cpp.o\x1b[0m\n'}
+[60.999694] (-) TimerEvent: {}
+[61.024118] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/follow_target__type_support.cpp.o\x1b[0m\n'}
+[61.037067] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/follow_target_status__type_support.cpp.o\x1b[0m\n'}
+[61.040838] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/follow_target_estimator__type_support.cpp.o\x1b[0m\n'}
+[61.082115] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.o\x1b[0m\n'}
+[61.099834] (-) TimerEvent: {}
+[61.103772] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/generator_status__type_support.cpp.o\x1b[0m\n'}
+[61.138401] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/geofence_result__type_support.cpp.o\x1b[0m\n'}
+[61.199960] (-) TimerEvent: {}
+[61.259214] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/geofence_status__type_support.cpp.o\x1b[0m\n'}
+[61.302571] (-) TimerEvent: {}
+[61.313770] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_controls__type_support.cpp.o\x1b[0m\n'}
+[61.392746] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_device_attitude_status__type_support.cpp.o\x1b[0m\n'}
+[61.402745] (-) TimerEvent: {}
+[61.417326] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_device_set_attitude__type_support.cpp.o\x1b[0m\n'}
+[61.417666] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_device_information__type_support.cpp.o\x1b[0m\n'}
+[61.478738] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_manager_information__type_support.cpp.o\x1b[0m\n'}
+[61.485761] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_manager_set_manual_control__type_support.cpp.o\x1b[0m\n'}
+[61.489840] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_manager_set_attitude__type_support.cpp.o\x1b[0m\n'}
+[61.502872] (-) TimerEvent: {}
+[61.550427] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_manager_status__type_support.cpp.o\x1b[0m\n'}
+[61.602545] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/goto_setpoint__type_support.cpp.o\x1b[0m\n'}
+[61.603664] (-) TimerEvent: {}
+[61.644216] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gpio_config__type_support.cpp.o\x1b[0m\n'}
+[61.704358] (-) TimerEvent: {}
+[61.779839] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gpio_in__type_support.cpp.o\x1b[0m\n'}
+[61.801885] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gpio_out__type_support.cpp.o\x1b[0m\n'}
+[61.805738] (-) TimerEvent: {}
+[61.858054] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gpio_request__type_support.cpp.o\x1b[0m\n'}
+[61.898993] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gps_inject_data__type_support.cpp.o\x1b[0m\n'}
+[61.899790] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gps_dump__type_support.cpp.o\x1b[0m\n'}
+[61.900335] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gripper__type_support.cpp.o\x1b[0m\n'}
+[61.906752] (-) TimerEvent: {}
+[61.915704] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/health_report__type_support.cpp.o\x1b[0m\n'}
+[61.955181] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/heater_status__type_support.cpp.o\x1b[0m\n'}
+[62.008281] (-) TimerEvent: {}
+[62.008863] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/home_position__type_support.cpp.o\x1b[0m\n'}
+[62.089976] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/hover_thrust_estimate__type_support.cpp.o\x1b[0m\n'}
+[62.108415] (-) TimerEvent: {}
+[62.114097] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.cpp.o\x1b[0m\n'}
+[62.208543] (-) TimerEvent: {}
+[62.278885] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o\x1b[0m\n'}
+[62.308693] (-) TimerEvent: {}
+[62.317773] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_status__type_support.cpp.o\x1b[0m\n'}
+[62.353817] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/iridiumsbd_status__type_support.cpp.o\x1b[0m\n'}
+[62.354107] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/irlock_report__type_support.cpp.o\x1b[0m\n'}
+[62.358100] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/landing_gear__type_support.cpp.o\x1b[0m\n'}
+[62.367606] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/landing_gear_wheel__type_support.cpp.o\x1b[0m\n'}
+[62.389220] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/landing_target_innovations__type_support.cpp.o\x1b[0m\n'}
+[62.390224] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/landing_target_pose__type_support.cpp.o\x1b[0m\n'}
+[62.408806] (-) TimerEvent: {}
+[62.461468] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o\x1b[0m\n'}
+[62.504734] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.cpp.o\x1b[0m\n'}
+[62.508937] (-) TimerEvent: {}

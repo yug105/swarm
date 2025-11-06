@@ -1,0 +1,232 @@
+[0.009s] Invoking command in '/home/yug/ros2_ws/src/build/px4_msgs_old': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yug/ros2_ws/src/px4_msgs_old -DCMAKE_INSTALL_PREFIX=/home/yug/ros2_ws/src/install/px4_msgs_old
+[0.054s] -- The C compiler identification is GNU 11.4.0
+[0.101s] -- The CXX compiler identification is GNU 11.4.0
+[0.108s] -- Detecting C compiler ABI info
+[0.169s] -- Detecting C compiler ABI info - done
+[0.174s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.174s] -- Detecting C compile features
+[0.175s] -- Detecting C compile features - done
+[0.177s] -- Detecting CXX compiler ABI info
+[0.248s] -- Detecting CXX compiler ABI info - done
+[0.253s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.253s] -- Detecting CXX compile features
+[0.254s] -- Detecting CXX compile features - done
+[0.258s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.388s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.492s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.533s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.540s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.549s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.562s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.580s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.602s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.827s] -- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.831s] -- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.834s] -- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.838s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.117s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.231s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.256s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.260s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.286s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.287s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.287s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.287s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.308s] -- Found PythonExtra: .so  
+[1.347s] -- Found ament_cmake_flake8: 0.12.14 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.351s] -- Found ament_cmake_pep257: 0.12.14 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.361s] -- Configuring done
+[1.393s] -- Generating done
+[1.404s] -- Build files have been written to: /home/yug/ros2_ws/src/build/px4_msgs_old
+[1.415s] Invoked command in '/home/yug/ros2_ws/src/build/px4_msgs_old' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yug/ros2_ws/src/px4_msgs_old -DCMAKE_INSTALL_PREFIX=/home/yug/ros2_ws/src/install/px4_msgs_old
+[1.416s] Invoking command in '/home/yug/ros2_ws/src/build/px4_msgs_old': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yug/ros2_ws/src/build/px4_msgs_old -- -j16 -l16
+[1.457s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.468s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.477s] [  6%] Built target ament_cmake_python_copy_px4_msgs_old
+[1.695s] running egg_info
+[1.695s] creating px4_msgs_old.egg-info
+[1.695s] writing px4_msgs_old.egg-info/PKG-INFO
+[1.696s] writing dependency_links to px4_msgs_old.egg-info/dependency_links.txt
+[1.696s] writing top-level names to px4_msgs_old.egg-info/top_level.txt
+[1.696s] writing manifest file 'px4_msgs_old.egg-info/SOURCES.txt'
+[1.698s] reading manifest file 'px4_msgs_old.egg-info/SOURCES.txt'
+[1.699s] writing manifest file 'px4_msgs_old.egg-info/SOURCES.txt'
+[1.734s] [  6%] Built target ament_cmake_python_build_px4_msgs_old_egg
+[2.433s] [  6%] Built target px4_msgs_old__cpp
+[2.445s] [ 19%] [32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs_old/msg/detail/vehicle_status_v0__functions.c.o[0m
+[2.445s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.445s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.446s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.500s] [ 22%] [32m[1mLinking C shared library libpx4_msgs_old__rosidl_generator_c.so[0m
+[2.538s] [ 22%] Built target px4_msgs_old__rosidl_generator_c
+[2.550s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.551s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.554s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.409s] [ 35%] [32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs_old/msg/vehicle_status_v0__type_support.cpp.o[0m
+[3.442s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.cpp.o[0m
+[3.468s] [ 41%] [32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs_old/msg/detail/dds_fastrtps/vehicle_status_v0__type_support.cpp.o[0m
+[3.500s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs_old/msg/vehicle_status_v0__type_support.cpp.o[0m
+[3.508s] [ 48%] [32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.c.o[0m
+[3.529s] [ 51%] [32m[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_c.so[0m
+[3.544s] [ 54%] [32m[1mLinking C shared library libpx4_msgs_old__rosidl_typesupport_introspection_c.so[0m
+[3.548s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs_old__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs_old/msg/detail/vehicle_status_v0__type_support_c.cpp.o[0m
+[3.570s] [ 58%] Built target px4_msgs_old__rosidl_typesupport_c
+[3.576s] [ 58%] Built target px4_msgs_old__rosidl_typesupport_introspection_c
+[3.643s] [ 61%] [32m[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_cpp.so[0m
+[3.684s] [ 61%] Built target px4_msgs_old__rosidl_typesupport_cpp
+[3.762s] [ 64%] [32m[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_introspection_cpp.so[0m
+[3.802s] [ 64%] Built target px4_msgs_old__rosidl_typesupport_introspection_cpp
+[3.804s] [ 67%] [32m[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.833s] [ 70%] [32m[1mLinking CXX shared library libpx4_msgs_old__rosidl_typesupport_fastrtps_c.so[0m
+[3.886s] [ 70%] Built target px4_msgs_old__rosidl_typesupport_fastrtps_cpp
+[3.912s] [ 70%] Built target px4_msgs_old__rosidl_typesupport_fastrtps_c
+[3.934s] [ 70%] Built target px4_msgs_old
+[3.955s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.473s] [ 74%] Built target px4_msgs_old__py
+[5.493s] [ 77%] [32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs_old/msg/_vehicle_status_v0_s.c.o[0m
+[5.607s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/px4_msgs_old/libpx4_msgs_old__rosidl_generator_py.so[0m
+[5.645s] [ 80%] Built target px4_msgs_old__rosidl_generator_py
+[5.665s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_c.c.o[0m
+[5.665s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.665s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs_old__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.747s] [100%] [32m[1mLinking C shared library rosidl_generator_py/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.747s] [100%] [32m[1mLinking C shared library rosidl_generator_py/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.747s] [100%] [32m[1mLinking C shared library rosidl_generator_py/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.781s] [100%] Built target px4_msgs_old__rosidl_typesupport_introspection_c__pyext
+[5.781s] [100%] Built target px4_msgs_old__rosidl_typesupport_fastrtps_c__pyext
+[5.781s] [100%] Built target px4_msgs_old__rosidl_typesupport_c__pyext
+[5.792s] Invoked command in '/home/yug/ros2_ws/src/build/px4_msgs_old' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yug/ros2_ws/src/build/px4_msgs_old -- -j16 -l16
+[5.803s] Invoking command in '/home/yug/ros2_ws/src/build/px4_msgs_old': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yug/ros2_ws/src/build/px4_msgs_old
+[5.810s] -- Install configuration: ""
+[5.811s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/ament_index/resource_index/rosidl_interfaces/px4_msgs_old
+[5.811s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old
+[5.811s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg
+[5.811s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/vehicle_status_v0.h
+[5.811s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail
+[5.811s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__struct.h
+[5.811s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__functions.h
+[5.812s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__functions.c
+[5.812s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.h
+[5.812s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_generator_c__visibility_control.h
+[5.812s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/library_path.sh
+[5.812s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/library_path.dsv
+[5.813s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_generator_c.so
+[5.813s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_generator_c.so" to ""
+[5.813s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old
+[5.813s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg
+[5.813s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.813s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail
+[5.814s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__rosidl_typesupport_fastrtps_c.h
+[5.814s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_fastrtps_c.so
+[5.814s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_fastrtps_c.so" to ""
+[5.814s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old
+[5.814s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg
+[5.814s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.815s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/vehicle_status_v0.hpp
+[5.815s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail
+[5.815s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__builder.hpp
+[5.815s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.hpp
+[5.815s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__struct.hpp
+[5.815s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__traits.hpp
+[5.815s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old
+[5.815s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg
+[5.815s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.816s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail
+[5.816s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__rosidl_typesupport_fastrtps_cpp.hpp
+[5.816s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/dds_fastrtps
+[5.816s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_fastrtps_cpp.so
+[5.816s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.816s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old
+[5.816s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg
+[5.817s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.817s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail
+[5.817s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__rosidl_typesupport_introspection_c.h
+[5.817s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.c
+[5.817s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_introspection_c.so
+[5.817s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_introspection_c.so" to ""
+[5.817s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_c.so
+[5.818s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_c.so" to ""
+[5.818s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old
+[5.818s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg
+[5.818s] -- Up-to-date: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail
+[5.818s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__rosidl_typesupport_introspection_cpp.hpp
+[5.818s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/include/px4_msgs_old/px4_msgs_old/msg/detail/vehicle_status_v0__type_support.cpp
+[5.818s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_introspection_cpp.so
+[5.818s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_introspection_cpp.so" to ""
+[5.819s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_cpp.so
+[5.819s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_typesupport_cpp.so" to ""
+[5.819s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/pythonpath.sh
+[5.819s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/pythonpath.dsv
+[5.819s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info
+[5.819s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info/top_level.txt
+[5.820s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info/PKG-INFO
+[5.820s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info/dependency_links.txt
+[5.820s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old-2.0.1-py3.10.egg-info/SOURCES.txt
+[5.820s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old
+[5.820s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/libpx4_msgs_old__rosidl_generator_py.so
+[5.820s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.820s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/__init__.py
+[5.820s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_c.c
+[5.821s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/_px4_msgs_old_s.ep.rosidl_typesupport_introspection_c.c
+[5.821s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.821s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg
+[5.821s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/__init__.py
+[5.821s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/_vehicle_status_v0.py
+[5.821s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/_vehicle_status_v0_s.c
+[5.821s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.822s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.855s] Listing '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old'...
+[5.855s] Compiling '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/__init__.py'...
+[5.855s] Listing '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg'...
+[5.855s] Compiling '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/__init__.py'...
+[5.856s] Compiling '/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/msg/_vehicle_status_v0.py'...
+[5.859s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.860s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.860s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.860s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.860s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.861s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/local/lib/python3.10/dist-packages/px4_msgs_old/px4_msgs_old_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.861s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_generator_py.so
+[5.861s] -- Set runtime path of "/home/yug/ros2_ws/src/install/px4_msgs_old/lib/libpx4_msgs_old__rosidl_generator_py.so" to ""
+[5.861s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/msg/VehicleStatusV0.idl
+[5.861s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/msg/VehicleStatusV0.msg
+[5.862s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/ament_index/resource_index/package_run_dependencies/px4_msgs_old
+[5.862s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/ament_index/resource_index/parent_prefix_path/px4_msgs_old
+[5.862s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/ament_prefix_path.sh
+[5.862s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/ament_prefix_path.dsv
+[5.862s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/path.sh
+[5.862s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/environment/path.dsv
+[5.862s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/local_setup.bash
+[5.863s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/local_setup.sh
+[5.863s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/local_setup.zsh
+[5.863s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/local_setup.dsv
+[5.863s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/package.dsv
+[5.863s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/ament_index/resource_index/packages/px4_msgs_old
+[5.863s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_cExport.cmake
+[5.863s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_cExport-noconfig.cmake
+[5.864s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_typesupport_fastrtps_cExport.cmake
+[5.864s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.864s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_cppExport.cmake
+[5.864s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.864s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.864s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_introspection_cExport.cmake
+[5.864s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.865s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_cExport.cmake
+[5.865s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_cExport-noconfig.cmake
+[5.865s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_introspection_cppExport.cmake
+[5.865s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.865s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_cppExport.cmake
+[5.865s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_old__rosidl_typesupport_cppExport-noconfig.cmake
+[5.865s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_pyExport.cmake
+[5.866s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/export_px4_msgs_old__rosidl_generator_pyExport-noconfig.cmake
+[5.866s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/rosidl_cmake-extras.cmake
+[5.866s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.866s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.866s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/ament_cmake_export_libraries-extras.cmake
+[5.866s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/ament_cmake_export_targets-extras.cmake
+[5.866s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.867s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.867s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_oldConfig.cmake
+[5.867s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/cmake/px4_msgs_oldConfig-version.cmake
+[5.867s] -- Installing: /home/yug/ros2_ws/src/install/px4_msgs_old/share/px4_msgs_old/package.xml
+[5.869s] Invoked command in '/home/yug/ros2_ws/src/build/px4_msgs_old' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yug/ros2_ws/src/build/px4_msgs_old

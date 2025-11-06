@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>swarm_offboard</name>
+  <version>0.0.1</version>
+  <description>Two-drone PX4 Offboard lawn-mower swarm controller (Python, no YAML)</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Core runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>px4_msgs</exec_depend>
+  <exec_depend>numpy</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

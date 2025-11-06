@@ -1,0 +1,6 @@
+{
+  "package_name": "px4_msgs_old",
+  "non_idl_tuples": [
+    "/home/yug/ros2_ws/src/px4_msgs_old:msg/VehicleStatusV0.msg"
+  ]
+}
